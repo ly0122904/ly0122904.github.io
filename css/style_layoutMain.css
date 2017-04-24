@@ -1,0 +1,194 @@
+/*--
+    Graduate -- Portfolio
+      
+    Author: Yan Liu w0122904_702
+    Date:   Feb.7 2017
+
+	Filename:	style_LayoutMain.css
+*/
+body {
+  font: 20px Montserrat, sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+p {font-size: 16px;}
+
+.psmall {
+	font-size: 12px;
+	text-align: left !important;
+	margin: 5px;
+}
+.margin {
+    
+    margin-bottom: 45px;}
+.bg-1 { 
+  /*background-color: #1abc9c; /* Green */
+  background-image: url(../images/bgLightBlue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.bg-2 { 
+  background-image: url(../images/bgDarkBlue.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.bg-3 { 
+  background-color: #ffffff; /* White */
+  color: #555555;
+}
+.bg-4 { 
+  background-color: #2f2f2f; /* Black Gray */
+  color: #fff;
+}
+.bg-5 { 
+  background-color: #132747;
+  color: #fff;
+}
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.container-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0px !important;
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+.navbar-nav  li a:hover, .navbar-nav li.active a {
+  color: orange !important;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+#logoNSCC {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-weight: bold;
+}
+.resumeFlow {
+    position: absolute;
+    right: 30px; 
+    top: 100px; 
+    z-index: -1;
+}
+#portf_title {
+  letter-spacing: 5px;
+  text-shadow: 10px 10px 10px blue;
+  padding-top: 45px;
+}
+#mySelf{
+  color: blue;
+  font-weight: bold;
+}
+#sendMe{color: white;}
+div.desc {
+  text-align: center;
+  padding: 10px 20px;
+}
+#skillicon{
+    height: 50px;
+}
+#skillrow{
+    width:90%; 
+    margin-left: 5%;
+}
+#sampleWork {
+  height: 200px;
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+} 
+strong {
+  color: grey;
+}
+.textOverImg {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-20%, -20%);
+  -ms-transform: translate(-20%, -20%);
+  height: 250px;
+  overflow: auto;
+}
+
+#imgFadeText:hover .thumbnail {
+  opacity: 0.15;
+}
+
+#imgFadeText:hover .textOverImg {
+  opacity: 1;
+}
+
+.capstoneProject{
+	margin-left: 25%;
+}
+/*web-panel style*/
+.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0;
+    
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.panel-footer .btn:hover {
+    background-color: #132747 !important;
+    color: #fff;
+}
+
+.panel-heading {
+    color: #fff !important;
+    background-color: #132747 !important;
+    padding: 10px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+	height: 85px;
+    
+}
+.panel-body{
+    height: 380px;
+	overflow: auto;
+
+}
+.panel-bodySmall{
+    height: 280px;
+	overflow: auto;
+
+}
+.panel-footer {
+    background-color: #fff !important;
+}
+
+.panel-footer h3 {
+    font-size: 20px;
+}
+
+.panel-footer h4 {
+    color: #132747;
+    font-size: 14px;
+}
+
+.panel-footer .btn {
+    margin: 10px 0;
+    background-color: transparent;
+}
+/* modal style*/
+.modalImg {
+    width: 75%;
+    margin-left: 10%;
+}

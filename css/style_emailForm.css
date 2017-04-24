@@ -1,0 +1,38 @@
+/* Below line is write to use Google font online */
+/* Reference: http://www.formget.com/javascript-contact-form/ */
+
+label{
+    float:left;
+    width: 25%; 
+    font: Montserrat, sans-serif;
+    font-size:12px;
+    margin-top: 5px;
+}
+input[type="text"]{
+    width:60%;
+    height:25px;
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    color: black;
+}
+textarea{
+    margin-left: -5%!important;
+    width:60%;
+    font-size: 10px;
+    color: black;
+    margin-top:5px !important; 
+    height:60px;
+    margin-right: 5%;
+    resize:none;
+}
+input[type="submit"]{
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+    background-color: darkblue;
+    color:white;
+    font-size:12px;
+    cursor:pointer;
+}
