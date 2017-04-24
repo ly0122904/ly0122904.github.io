@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yan Liu ePortfolilo Database</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link href="css/style_layoutMain.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style_emailForm.css" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class="w3-quarter">
+          <div class="w3-white bg-1 w3-card-4">
+            <div class="w3-display-container text-center">
+              <a href="index.html" onclick="closeWin()"><img src="images/YanLiu.jpg" width="200px"  class="w3-border img-circle w3-padding w3-padding-16" alt="me"/></a>
+              <br/><br/>
+			  <a href="index.html" onclick="closeWin()"><button class="w3-button w3-small w3-transparent w3-text-orange w3-round-large w3-border w3-border-grey">Back</button></a>
+              <div class="w3-display-bottomcenter w3-container w3-text-black">
+                <h2 id="mySelf">Yan Liu</h2>
+              </div>
+            </div>
+            <div class="w3-display-container text-center">
+                  <a href="Resume-YanLiu-w0122904-702.pdf" download>
+                    <img src="images/icon-pdf.jpg" alt="pdf_icon" width="30px" />
+                  </a>
+                  <div class="desc w3-text-white">Download Resume</div>
+            </div>
+            <hr/>
+            <div class="w3-display-container text-center">
+                <h4>Contact Me</h4><br />
+            	<div>
+            		<p>Where to Find Me</p>
+            		<img id="line" src="Images/straight_line.png" alt="line" width="100%"/>
+            		<p class="psmall">Institute of Technology Campus, NSCC</p>
+            		<p class="psmall">5685 Leeds St, Halifax, NS B3K 2T3</p>
+                    <div id="googleMap" style="height:100px;width:80%;margin: 10%;"></div>
+            	</div>
+                <!-- Add Google Maps -->
+                <script src="https://maps.googleapis.com/maps/api/js"></script>    
+                <script src="js/mapShow.js"></script>
+        
+            	<div>
+            		<p>Sent me an email</p>
+                    <p><i class="w3-margin-right w3-large w3-text-white glyphicon glyphicon-envelope"></i>
+                      <a class="w3-text-white" href="mailto:w0122904@nscc.ca?Subject=Hello%20feedback">w0122904@nscc.ca
+                      </a>
+                    </p>
+            		<img id="line" src="images/straight_line.png" alt="line" width="100%"/>
+            		<div id="form_email"></div> <!-- Include JS file here -->
+            		<script src="js/email_form.js"></script>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Left Column -->
+        
+    
+        <!-- Right Column -->
+        <div class="w3-threequarter">
+        <!--Skill section -->
+        <div class="container-fluid bg-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/database.jpg" alt="database" width="100%"/>
+            </div>
+            <div class="col-sm-9">
+              <h2>Database Design and Development</h2>
+              <h4 class="w3-text-grey" >The sample work is to illustrate essential relational database design modelling techniques, and shows how Oracle SQL can be used to implement a database. The practice included conceptual modelling using the crow’s feet notation and the Unified Modelling Language (UML), and using SQL statements (DDL and DML) to build a database, then using queries in a variety of ways to help transform, populate and test.</h4> 
+			  <h4 class="w3-text-grey">The Software use Oracle 11g Express and SQL Developer, the existing databases were used as a base to re-build, modified and practice.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="text-center">
+            <h2>Showcase</h2>
+          </div>
+		  <div class="w3-margin w3-leftbar w3-rightbar w3-border-blue ">
+            <p class="psmall "><strong class="w3-text-blue">This project takes an existing, populated database (Oracle 11g Northwind Database), re-design parts of it according to the provided requirements, implement those design changes, and then migrate all existing data from the original database to the newly-enhanced database. Part of the data migration will entail some data manipulation. then some test scripts was created to verify the accuracy of your data migration.<strong></p>
+			<p class="psmall"><strong class="w3-text-blue">This project is to practice all the core DBAS course concepts, so will require analysis and design of an ERD, implementation of both Data Definition Language and Data Manipulation Language scripts, as well as using queries in a variety of ways to help transform, populate and test the validity of your work.
+			<strong></p>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Entity Relationship Diagram</h4><h4>ERD</h4>
+                </div>
+                <div class="panel-bodySmall">
+                  <p></p>
+                  <p class="psmall"><strong >ER Diagrams illustrate the logical structure of databases. ER diagram deals with three major components of a database namely, Entity, Attributes and Relation.Each relationship in ER Diagram has a relationship between the two entities.Three types  of relationship included: one to one, one to many and many to many. The relationship is established on the basis of primary keys and foreign keys.In this project, the original Northwind ERD and redesigned ERD are shown, there are 3 tables added. </strong></p>
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showERD').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+            <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Data Definition Language</h4><h4>DDL</h4>
+                </div>
+                <div class="panel-bodySmall">
+                  <p></p>
+                  <p class="psmall"><strong>
+				  Data Definition Language (DDL) script is a standard for commands that define the different structures in a database. DDL statements create, modify, and remove database objects such as tables, indexes, and users. Common DDL statements are CREATE, ALTER, and DROP</strong></p>
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showDDL').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+           <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Data Manipulation Language</h4><h4>DML</h4>
+                </div>
+                <div class="panel-bodySmall">
+                <p></p>
+                  <p class="psmall"><strong>
+				  DML statements are used to work with the data in tables.It is used to retrieve, store, modify, delete, insert and update data in database. Examples: SELECT, UPDATE, INSERT statements. </strong></p>
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showDML').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+          </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-footer bg-4 text-center">
+      <p>Copyright &copy; 2017 by Yan Liu at NSCC</a></p> 
+    </footer>
+    
+    <!-- showcase ERD modal -->
+    <div id="showERD" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showERD').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Northwind Database ERD</h2>
+          </header>
+          <div class="w3-container case">
+           <h3>Original</h3>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/NWold.jpg" alt="erdold"/>
+           <br /><br />
+           <h3>Reversed</h3>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/NWnew.jpg" alt="erdnew"/>
+          </div>
+		 
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showERD').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+        
+        <!-- showcase DDL modal -->
+        <div id="showDDL" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showDDL').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>DDL Scripts</h2>
+          </header>
+        
+          <div class="w3-container">
+           <p class="w3-small">To Create, Alert and Drop Table</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/NWd1.png" alt="ddl1"/>
+		   <img class="modalImg w3-border w3-padding" src="images/showcase/NWd2.png" alt="ddl2"/>
+          </div>
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showDDL').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+    <!-- showcase DML modal -->
+        <div id="showDML" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showDML').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>DML Scripts</h2>
+          </header>
+        
+          <div class="w3-container">
+           <img class="modalImg w3-border w3-padding" src="images/showcase/NWm1.png" alt="dml1"/>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/NWm2.png" alt="dml2"/>
+          </div>
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showDML').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+    </div>
+        
+    <script src="js/showcasetab.js"></script> 
+</body>
+</html>

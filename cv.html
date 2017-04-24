@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link href="css/style_layoutMain.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style_emailForm.css" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+    <!--style>
+    html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+    </style-->
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class="w3-quarter">
+          <div class="w3-white bg-1 w3-card-4">
+            <div class="w3-display-container text-center">
+              <a href="index.html" onclick="closeWin()"><img src="images/YanLiu.jpg" width="200px"  class="w3-border img-circle w3-padding w3-padding-16" alt="me"/></a>
+              <br/><br/>
+			  <a href="index.html" onclick="closeWin()"><button class="w3-button w3-small w3-transparent w3-text-orange w3-round-large w3-border w3-border-grey">Back</button></a>
+              <div class="w3-display-bottomcenter w3-container w3-text-black">
+                <h2 id="mySelf">Yan Liu</h2>
+              </div>
+            </div>
+            <div class="w3-display-container text-center">
+                  <a href="Resume-YanLiu-w0122904-702.pdf" download>
+                    <img src="images/icon-pdf.jpg" alt="pdf_icon" width="50" />
+                  </a>
+                  <div class="desc w3-text-white">Download Resume</div>
+            </div>
+            <hr/>
+            <div class="w3-display-container text-center">
+                <h4>Contact Me</h4><br />
+            	<div>
+            		<p>Where to Find Me</p>
+            		<img id="line" src="Images/straight_line.png" alt="line" width="100%"/>
+            		<p class="psmall">Institute of Technology Campus, NSCC</p>
+            		<p class="psmall">5685 Leeds St, Halifax, NS B3K 2T3</p>
+                    <div id="googleMap" style="height:100px;width:80%;margin: 10%;"></div>
+            	</div>
+                <!-- Add Google Maps -->
+                <script src="https://maps.googleapis.com/maps/api/js"></script>    
+                <script src="js/mapShow.js"></script>
+        
+            	<div>
+            		<p>Sent me an email</p>
+                    <p><i class="w3-margin-right w3-large w3-text-white glyphicon glyphicon-envelope"></i>
+                      <a class="w3-text-white" href="mailto:w0122904@nscc.ca?Subject=Hello%20feedback">w0122904@nscc.ca
+                      </a>
+                    </p>
+            		<img id="line" src="images/straight_line.png" alt="line" width="100%"/>
+            		<div id="form_email"></div> <!-- Include JS file here -->
+            		<script src="js/email_form.js"></script>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Left Column -->
+        
+    
+        <!-- Right Column -->
+        <div class="w3-threequarter">
+        <!--Skill section -->
+        <div class="w3-container w3-card-2 bg-5 w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Technical Skills</h2>
+            <div class="w3-container">
+              <h4 class="w3-text-teal"><i class="w3-margin-right"></i>Programming Languages:</h4>
+              <h5>Java, Python, J2EE,  C++, C#, PHP, SQL, SAP, HTML, CSS, XML, JavaScript, Jquery, C, Fortran</h5>
+              <hr/>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-text-teal"><i class="w3-margin-right"></i>Software:</h4>
+              <h5>Visual Studio, Eclipse, SQL Developer, Android Studio, pyQT, pyCharm, phpStorm, MS Office, MS Visio</h5>
+              <hr/>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-text-teal"><i class="w3-margin-right"></i>Operating Systems:</h4>
+              <h5>Windows, Linux/Unix</h5>
+              <hr/>
+            </div>
+            <div class="w3-container">
+              <h4 class="w3-text-teal"><i class="w3-margin-right"></i>Mathematics and Data Analysis</h4>
+              <h5>Statistics, Analysis, Optimization</h5><br/>
+            </div>
+          </div>
+          
+          <!--Education section -->
+          <div class="w3-container w3-card-2 bg-5 w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>2015 - 2017</h6>
+              <h5 class="w3-opacity"><b>Nova Scotia Community Colledge, Nova Scotia, Canada</b></h5>
+              <h5>Diploma, Information Technology Programming</h5>
+              <hr/>
+            </div>
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>1998 - 2000</h6>
+              <h5 class="w3-opacity"><b>University of Regina, Saskatchewan, Canada</b></h5>
+              <h5>Master of Applied Science (Environmental Engineering)</h5>
+              <hr/>
+            </div>
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>1993 - 1997</h6>
+              <h5 class="w3-opacity"><b>Self-Taught Higher Education, Tianjin, P.R. China</b></h5>
+              <h5>Bachelor of Science (Computer Science)</h5>
+              <hr/>
+            </div>
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>1990 - 1994</h6>
+              <h5 class="w3-opacity"><b>Nankai University, Tianjin, P. R. China</b></h5>
+              <h5>Bachelor of Science (Environmental Science)</h5><br/>
+            </div>
+          </div>
+          
+          <!--Work section -->
+          <div class="w3-container w3-card-2 bg-5 w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>May 2016 - Jun. 2016</h6>
+              <h5 class="w3-opacity"><b>Website Design and CRM Integration, Hospice Halifax, Halifax, Nova Scotia, Canada</b></h5>
+              <h5>-	Create a web form by using PHP and WordPress; </h5>
+              <h5>-	Learning and practicing Salesforce for NPSP (Nonprofit Start Package);</h5>
+              <h5>-	Integrated website form with Salesforce for data tracking</h5>
+              <hr/>
+            </div>
+            
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>2000 - 2005</h6>
+              <h5 class="w3-opacity"><b>Research Assistant, Part time(Ph.D, not completed), University of Regina, Canada </b></h5>
+              <h5>-	Data collection, analysis, and processing for the research and projects;  </h5>
+              <h5>-	Studied optimal design of environmental systems;</h5>
+              <h5>-	UTCHEM Project and reasearch: using AI (genetic-algorithm)-based nonlinear mixed-integer optimization (C++) combined with a 3D groundwater simulation model (Fortran90) to determine optimal remediation strategies </h5>
+              <hr/>
+            </div>
+                        
+            <div class="w3-container">
+              <h6 class="w3-text-teal"><i class="w3-margin-right"></i>1997 - 1998</h6>
+              <h5 class="w3-opacity"><b>Engineer (Information technology, Part Time), Environmental Protection Bureau (EPB) 
+Tianjin Municipal Government (Under-direct jurisdiction of Central Authority), P.R.China
+</b></h5>
+              <h5>-	Participated the forming of new Information Center;  </h5>
+              <h5>-	Data entry and database development;</h5>
+              <h5>-	Maintaining and servicing computers and software installation.</h5>
+              <hr/>
+            </div>
+            <button class="w3-btn w3-large w3-opacity-max w3-border w3-border-blue w3-hover-lime" onclick="showMoreFunction()">More</button><br/><br/>
+            <div id="showMore" class="w3-hide w3-container">
+                <div class="w3-container">
+                  <h6 class="w3-text-teal"><i class="w3-margin-right"></i>Sept. 2009 - Sept. 2016</h6>
+                  <h5 class="w3-opacity"><b>Convenience Store Manager, Newstand ETC., Halifax, Nova Scotia, Canada</b></h5>
+                  <h5>-	Store daily operation and management, training new employees, and custom services;  </h5>
+                  <h5>-	Book-keeping for all the receipts and daily transactions;</h5>
+                  <h5>-	Maintain and keep the profit steady yearly in 10% with customer satisfaction</h5>
+                  <hr/>
+                </div>
+                
+                <div class="w3-container">
+                  <h6 class="w3-text-teal"><i class="w3-margin-right"></i>1998 - 2000</h6>
+                  <h5 class="w3-opacity"><b>Research Assistant, Faculty of Engineering, University of Regina, Canada</b></h5>
+                  <h5>-	Established a solid background in environmental systems analysis;  </h5>
+                  <h5>-	Studied optimal design and uncertainty-based modeling techniques;</h5>
+                  <h5>-	Participated academic researches and projects</h5>
+                  <hr/>
+                </div>
+    
+                <div class="w3-container">
+                  <h6 class="w3-text-teal"><i class="w3-margin-right"></i>1994 - 1998</h6>
+                  <h5 class="w3-opacity"><b>Environmental Engineer, Environmental Protection Bureau (EPB) 
+    Tianjin Municipal Government (Under-direct jurisdiction of Central Authority), P.R.China
+    </b></h5>
+                  <h5>-	Fulfilled the Environmental Impact Assessment (EIA) of the construction projects; </h5>
+                  <h5>-	Organized the reports, proposal writing and coordinated the teamwork;</h5>
+                  <h5>-	Prepared, planned, organized and conducted the employee training;</h5>
+                  <h5>-	Participated actively on various joint.</h5>
+                  <br/>
+                </div>
+            </div>
+            
+            <script>
+function showMoreFunction() {
+    var x = document.getElementById("showMore");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-footer bg-4 text-center">
+      <p>Copyright &copy; 2017 by Yan Liu at NSCC</a></p> 
+    </footer>
+</body>
+</html>

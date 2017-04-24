@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yan Liu ePortfolilo Software</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link href="css/style_layoutMain.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style_emailForm.css" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class="w3-quarter">
+          <div class="w3-white bg-1 w3-card-4">
+            <div class="w3-display-container text-center">			  
+              <a href="index.html" onclick="closeWin()"><img src="images/YanLiu.jpg" width="200px"  class="w3-border img-circle w3-padding w3-padding-16" alt="me"/></a>
+			  <br/><br/>
+			  <a href="index.html" onclick="closeWin()"><button class="w3-button w3-small w3-transparent w3-text-orange w3-round-large w3-border w3-border-grey">Back</button></a>
+              <div class="w3-display-bottomcenter w3-container w3-text-black">
+                <h2 id="mySelf">Yan Liu</h2>
+              </div>
+            </div>
+            <div class="w3-display-container text-center">
+                  <a href="Resume-YanLiu-w0122904-702.pdf" download>
+                    <img src="images/icon-pdf.jpg" alt="pdf_icon" width="30px" />
+                  </a>
+                  <div class="desc w3-text-white">Download Resume</div>
+            </div>
+            <hr/>
+            <div class="w3-display-container text-center">
+                <h4>Contact Me</h4><br />
+            	<div>
+            		<p>Where to Find Me</p>
+            		<img id="line" src="Images/straight_line.png" alt="line" width="100%"/>
+            		<p class="psmall">Institute of Technology Campus, NSCC</p>
+            		<p class="psmall">5685 Leeds St, Halifax, NS B3K 2T3</p>
+                    <div id="googleMap" style="height:100px;width:80%;margin: 10%;"></div>
+            	</div>
+                <!-- Add Google Maps -->
+                <script src="https://maps.googleapis.com/maps/api/js"></script>    
+                <script src="js/mapShow.js"></script>
+        
+            	<div>
+            		<p>Sent me an email</p>
+                    <p><i class="w3-margin-right w3-large w3-text-white glyphicon glyphicon-envelope"></i>
+                      <a class="w3-text-white" href="mailto:w0122904@nscc.ca?Subject=Hello%20feedback">w0122904@nscc.ca
+                      </a>
+                    </p>
+            		<img id="line" src="images/straight_line.png" alt="line" width="100%"/>
+            		<div id="form_email"></div> <!-- Include JS file here -->
+            		<script src="js/email_form.js"></script>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Left Column -->
+        
+    
+        <!-- Right Column -->
+        <div class="w3-threequarter">
+        <!--Skill section -->
+        <div class="container-fluid bg-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/img-prog.jpg" alt="programming" width="100%"/>
+            </div>
+            <div class="col-sm-9">
+              <h3>Programming Languages and Software Development</h3>
+              <h4 class="w3-text-grey" >Programming involves analysis, developing understanding, generating algorithms, verification of requirements of algorithms, and implementation of algorithms in a target programming language. Related tasks include testing, debugging, and maintaining the source code, and implementation of the build system.</h4>
+			  <h4 class="w3-text-grey">Sample works include C#, Java, C++, and Python. All the works are to present the technical skills and get understanding about how develop programs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="text-center">
+            <h2>Showcase</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>C# and .NET Platform</h4>
+                </div>
+                <div class="panel-body">
+                  <p></p>
+                  <p class="psmall"><strong >C# is a modern language created by Microsoft as part of its .NET platform of languages.It encompass strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.</strong><p>
+				  <p class="psmall" style="text-align: left !important;"><strong >. NET Framework is intended to be used by most new applications created for the Windows platform. Microsoft also produces an integrated development environment largely for .NET software called Visual Studio.</strong></p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-aqua">Building app</span></p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-yellow">Building Game</span></p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-pink">Building UWP</span></p> 
+                  
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showCs').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+            <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>C++ and Jave Objective_Oriented_Programming</h4>
+                </div>
+                <div class="panel-body">
+                  <p></p>
+                  <p class="psmall"><strong>C++ programming has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation. C++ is a compiled language, with implementations of it available on many platforms and provided by various organizations</strong></p>
+				  <p class="psmall" style="text-align: left !important;"><strong>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented,[14] and specifically designed to have as few implementation dependencies as possible. Java is sn application programming. It is widely used in window, web-based, enterprise and mobile applications. It is platform-independent. </strong></p>
+				  
+                  <p>
+                    <span class="w3-tag w3-small w3-round-small w3-red">algorithm Implementation</span>
+                    <span class="w3-tag w3-small w3-round-small w3-green">Game</span></p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-purple">Console App</span>
+
+                  </p>
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showCpp').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+           <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Python</h4>
+                </div>
+                <div class="panel-body">
+                <p></p>
+                  <p class="psmall"><strong>Python is a general-purpose, versatile and popular programming language. Python interpreters are available for many operating systems, allowing Python code to run on a wide variety of systems. This course is a introduction to both fundamental programming concepts and the Python programming language. It's concise and easy to read, and also a good language to have in any programmer's stack as it can be used for everything from web development to software development and scientific applications.</strong></p>
+                  <p><img src="images/icons/icon-python.jpg" height="40px"/></p>
+                  
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showPy').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+          </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-footer bg-4 text-center">
+      <p>Copyright &copy; 2017 by Yan Liu at NSCC</a></p> 
+    </footer>
+    
+    <!-- showcase c# modal -->
+    <div id="showCs" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          
+		  <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showCs').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Sample Works for C# in Visual Studio 2015</h2>
+          </header>
+        
+          <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+           <li><a href="#" class="tablinkCs" onclick="openCaseCs(event, 'CaseCs1')">TCP Client - Server</a></li>
+           <li><a href="#" class="tablinkCs" onclick="openCaseCs(event, 'CaseCs2')">Windows Form Game</a></li>
+           <li><a href="#" class="tablinkCs" onclick="openCaseCs(event, 'CaseCs3')">UWP</a></li>
+          </ul>
+        
+          <div id="CaseCs1" class="w3-container caseCs">
+           <h2>Asynchronous Chat Application</h2>
+           <p>Using C# within the Visual Studio IDE, the Windows application will be the skeleton of a fictional, networked game.The area marked “Game Goes Here” is where the fictional game is played. The area below the game play area is where users can chat with another player of the game. In this work, the game play area was ignored, and it only deals with the chat ability. This example using <a href="http://nc110.sourceforge.net/">netCat</a> as a chat server 1234 as port. 
+		   </p><br /><br />
+           <p class="w3-small">Video Show here</p>
+           <div class="embeddedVideo w3-container w3-center">
+				<video width="600" class="w3-center" controls>
+				  <source src="images/video/tcp.mp4" type="video/mp4">
+				  <source src="mov_bbb.ogg" type="video/ogg">
+				  Your browser does not support HTML5 video.
+				</video>     
+			</div>
+			<p class="w3-small">Sample Code</p>
+			<img class="modalImg w3-border w3-padding" src="images/showcase/tcpC.png" alt="chatCode"/><br /><br /> 
+          </div>
+        
+          <div id="CaseCs2" class="w3-container caseCs">
+           <h2>Windows Form Game Design</h2>
+           <p>Create Maze game using GDI+, the game allows the user to navigate a maze to a randomly generated/fixed exit. As the user moves throughout the maze, the path to the exit is shown using a marker. When the user reaches the exit, the screen message is displayed to show successfully completed the maze and after 5 seconds, the message cleared and a new level will begin. This program generate random maze using depth-first search algorithm.</p><br /><br />
+           <p class="w3-small">Game Video show</p>
+           <div class="embeddedVideo w3-container w3-center">
+				<video width="600" class="w3-center" controls>
+				  <source src="images/video/maze.mp4" type="video/mp4">
+				  <source src="mov_bbb.ogg" type="video/ogg">
+				  Your browser does not support HTML5 video.
+				</video>     
+			</div>
+			<p class="w3-small">Sample Code</p>
+			<img class="modalImg w3-border w3-padding" src="images/showcase/mazeC.png" alt="mazeCode"/><br /><br />
+          </div>
+          
+          <div id="CaseCs3" class="w3-container caseCs">
+		  <!-- Sample1-->
+			<div class="w3-container">
+			   <h2 class="w3-text-blue">UWP Desktop App Notes</h2>
+			   <p>The app stores a user’s notes as database entries in a local SQLite database. The notes are stored as RTF (Rich Text Format). Text data is saved, edited and deleted from a SQLite database. The About details should be a separate XAML page that is displayed with a back button along with the application version details. The notes (in edit mode) will display with a bottom toolbar that allows for Bold, Underline and Italic text. For UI example see below</p><br/><br />
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpNote.png" alt="uwpNote"/><br />
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpNote2.png" alt="uwpNote2"/><br /><br /> 
+			   <p class="w3-small">Sample code shows following</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpCode.png" alt="uwpcode1"/><br /><br />
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpCode2.png" alt="uwpcode2"/>
+			</div>
+			<!-- Sample 2-->
+			<div class="w3-container">
+			<h2 class="w3-text-blue">Books Search Library</h2>
+			   <p>Using the Open Library Search API our team make an application that allow the user to search for books in the Open Library database. Users will be able to select a book and find more information such as the title, the author, the first publish year, and an image of the cover. The application use a list view on the left side of the page which after the search button is clicked will fill with titles of different books that match the search terms within the Open Library database. Once the user selects a book title, it’s cover, title, author, and publish year are listed on the right side of the page. The cover be shown in an image view that takes up most of the content area. There will also be an about page which will list all the team members names as well as any other important information.</p><br/><br />
+			   <p class="w3-small">UI design and XAML</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpBookUi.png" alt="bookUidesign"/><br /><br /> 
+			   <p class="w3-small">Runing Code -- 2 Pages UI</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpBook.png" alt="OpenBook"/><br /><br/>
+			   <p class="w3-small">Sample Code</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpBookC.png" alt="OpenBookCode"/><br /><br />
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/uwpBookC2.png" alt="OpenBookCode"/><br /><br />
+			   
+			</div>
+          </div>
+		 
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showCs').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+        
+        <!-- showcase c++ modal -->
+        <div id="showCpp" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showCpp').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Sample Works for C++ and Java</h2>
+          </header>
+        
+          <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+           <li><a href="#" class="tablinkCpp" onclick="openCaseCpp(event, 'CaseCpp1')">C++</a></li>
+           <li><a href="#" class="tablinkCpp" onclick="openCaseCpp(event, 'CaseCpp2')">Java</a></li>
+          </ul>
+        
+          <div id="CaseCpp1" class="w3-container caseCpp">
+		  <!--Sample1 -->
+			<div class="w3-container"> 
+			   <h2>Student Course Registration with C++</h2>
+			   
+			   <p>This project is to write appropriate constructors(s), mutator, and accessor functions for the class, and implement “big three / rule of three” (i.e. copy constructor, assignment operator, destructor).The driver program that tests/demonstrates the functionality of the Student class to demonstrate all the capabilities of the Student class (i.e. both the assignment and copy constructor). The UML for this case is show as</p><br /><br />
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/cppU1.jpg" alt="UML1"/>
+			   <br /><br />
+			   <p class="w3-small">Sample code</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/cppU1C.png" alt="codeCpp1"/>
+			   <p class="w3-small">Result show as </p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/cppU1R.png" alt="codephp"/>
+			</div>
+			<!--Sample2 -->
+			<div class="w3-container"> 
+			   <h2>2D Predator-Prey Simulation with C++</h2>
+			   
+			   <p>The goal for this programming project is to create a simple modified 2D predator-prey simulation (aka a zombie apocalypse). In this simulation the prey are humans and the predators are zombies. These beings live in a 20 x 20 grid of cells (a city). Only one being may occupy a cell at a time. The grid is enclosed, so a being is not allowed to move off the edges of the city or appear on the other side. Time is simulated in steps. Each being performs some action every time step.The UML Activity Diagram show here: </p><br /><br />
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/cppU2.jpg" alt="Zombie"/>
+			   <br /><br />
+			   <p class="w3-small">Runing Result show with steps</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/cppZombie.png" alt="codephp"/>
+			   <p class="w3-small">Sample Code as: </p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/cppU2C.png" alt="codephp"/>
+			</div>
+          </div>
+        
+          <div id="CaseCpp2" class="w3-container caseCpp">
+           <h2>Java</h2>
+           <p>Using Java to write a screen saver appliation, which included four moving shapes (one polygon)and move using transitions. This work sample demonstrate a variety of unique visual state changes (e.g. color, gradients, size, etc). The super class called shapes. The program demonstrate polymorphic processing by using a timer object to iterate through an array list of type shape into which all the sub-classes of superclass shape have been explicitly cast. The shapes bouncing off the walls and respond to changes made to the panel / frame size. Additional shapes can be added to the panel at run time using a control, mouse or key event.</p>
+		   <p class="w3-small">UML Class Diagram: </p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/javaU.jpg" alt="UML Class"/><br /><br /> 
+           <p class="w3-small">Sample Code -- Abstract class Shape</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/javaShape.png" alt="super Java"/>
+          <br/><br/>
+		  <p class="w3-small">Sample Code -- CircleShape and HexgonShape class</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/javaS.png" alt="shapes Java"/>
+          <br/><br/>
+		  <p class="w3-small">Sample Code -- MainScreenSaver</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/javaMC.png" alt="Main Java"/>
+          </div>
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showCpp').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+		
+    <!-- showcase Python modal -->
+    <div id="showPy" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showPy').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Sample Works for Python</h2>
+          </header>
+       
+          <div class="w3-container">
+           <p>This project is to create a Subnet Calculator using Python program with a graphical user interface.The user will enter two pieces of information: the base network address and the desired number of hosts per subnet. You can assume the network address will be the valid address for a class A, B or C network (e.g. 10.0.0.0) and the desired number of hosts is mathematically possible within that network (e.g. you can't type 257 for a class C network), but the number does not have to match the actual number of possible hosts in the subnet.</p><br /><br />
+		   <p class="w3-small">UI initial as:</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/py0.png" alt="subnet"/>
+           <br /><br />
+		   <p class="w3-small">Runnign Result based on user inputs</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/py1.png" alt="codecss"/><br /><br />
+           <p class="w3-small">Sample code for Application</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/pyC.png" alt="codecss"/>
+		   <br /><br />
+           <p class="w3-small">Sample code for UI</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/pyC2.png" alt="codecss"/>
+          </div>
+ 
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showPy').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+        
+    </div>
+        
+    <script src="js/showcasetab.js"></script> 
+</body>
+</html>

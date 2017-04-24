@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yan Liu ePortfolilo Capstone</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link href="css/style_layoutMain.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style_emailForm.css" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class="w3-quarter">
+          <div class="w3-white bg-1 w3-card-4">
+            <div class="w3-display-container text-center">
+              <a href="index.html" onclick="closeWin()"><img src="images/YanLiu.jpg" width="200px"  class="w3-border img-circle w3-padding w3-padding-16" alt="me"/></a>
+              <br/><br/>
+			  <a href="index.html" onclick="closeWin()"><button class="w3-button w3-small w3-transparent w3-text-orange w3-round-large w3-border w3-border-grey">Back</button></a>
+              <div class="w3-display-bottomcenter w3-container w3-text-black">
+                <h2 id="mySelf">Yan Liu</h2>
+              </div>
+            </div>
+            <div class="w3-display-container text-center">
+                  <a href="Resume-YanLiu-w0122904-702.pdf" download>
+                    <img src="images/icon-pdf.jpg" alt="pdf_icon" width="30px" />
+                  </a>
+                  <div class="desc w3-text-white">Download Resume</div>
+            </div>
+            <hr/>
+            <div class="w3-display-container text-center">
+                <h4>Contact Me</h4><br />
+            	<div>
+            		<p>Where to Find Me</p>
+            		<img id="line" src="Images/straight_line.png" alt="line" width="100%"/>
+            		<p class="psmall">Institute of Technology Campus, NSCC</p>
+            		<p class="psmall">5685 Leeds St, Halifax, NS B3K 2T3</p>
+                    <div id="googleMap" style="height:100px;width:80%;margin: 10%;"></div>
+            	</div>
+                <!-- Add Google Maps -->
+                <script src="https://maps.googleapis.com/maps/api/js"></script>    
+                <script src="js/mapShow.js"></script>
+        
+            	<div>
+            		<p>Sent me an email</p>
+                    <p><i class="w3-margin-right w3-large w3-text-white glyphicon glyphicon-envelope"></i>
+                      <a class="w3-text-white" href="mailto:w0122904@nscc.ca?Subject=Hello%20feedback">w0122904@nscc.ca
+                      </a>
+                    </p>
+            		<img id="line" src="images/straight_line.png" alt="line" width="100%"/>
+            		<div id="form_email"></div> <!-- Include JS file here -->
+            		<script src="js/email_form.js"></script>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Left Column -->
+        
+    
+        <!-- Right Column -->
+        <div class="w3-threequarter">
+        <!--Skill section -->
+        <div class="container-fluid bg-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/capstone2.jpg" alt="capstone" width="100%"/>
+            </div>
+            <div class="col-sm-9">
+              <h2>Capstone</h2>
+              <h4 class="w3-text-grey" >This project's purpose is to design and develop a computer simulation model a software for air traffic management at an airport. This software will handle the queuing of aircraft for lading and takeoff on the airport’s runways, while also assigning aircraft to specific gates and managing the lading circuit. Wind, weather, varying quantities of arrivals and departures that affect air traffic queuing will be randomly generated to simulate real-life values.</h4>
+			  <h4 class="w3-text-grey">This project developed using the Scrum process, and followed its sprint model for the development cycle.</h4>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="text-center">
+            <h2>Showcase</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>ERD and Class Diagram</h4>
+                </div>
+                
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showCapERD').style.display='block'" class="btn w3-large w3-round-large w3-teal w3-border">Show</button>
+                </div>
+              </div> 
+            </div> 
+            <div class="col-sm-6">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>C# Code Sample</h4>
+                </div>
+               
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showCapCode').style.display='block'" class="btn w3-large w3-round-large w3-teal w3-border">Show</button>
+                </div>
+              </div> 
+            </div> 
+          </div>
+		  <div class="row">
+			<br/><br/>
+			<div class="embeddedVideo w3-container w3-center">
+				<iframe width="720" height="405" src="https://www.youtube.com/embed/B04uFXK-ZF4" frameborder="0" allowfullscreen></iframe>   
+			</div>
+		  </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-footer bg-4 text-center">
+      <p>Copyright &copy; 2017 by Yan Liu at NSCC</a></p> 
+    </footer>
+    
+    <!-- showcase ERD capstone -->
+    <div id="showCapERD" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showCapERD').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Airport Traffic Control ERD and Class Diagram</h2>
+          </header>
+          <div class="w3-container case">
+           <h3>ERD</h3>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/capstoneErd.jpg" alt="capstone ERD"/>
+           <br /><br />
+           <h3>Class Diagram</h3>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/capstoneClass.jpg" alt="capstone class diagram"/>
+          </div>
+		 
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showCapERD').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+        
+        <!-- showcase sample code -->
+        <div id="showCapCode" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showCapCode').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>C# Code Sample</h2>
+          </header>
+        
+          <div class="w3-container">
+           <p class="w3-small">form.cs</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/capCode1.png" alt="capCode1"/>
+		   <img class="modalImg w3-border w3-padding" src="images/showcase/capC2.png" alt="capCode2"/>
+		   <img class="modalImg w3-border w3-padding" src="images/showcase/capC3.png" alt="capCode3"/>
+		   <img class="modalImg w3-border w3-padding" src="images/showcase/capC4.png" alt="capCode4"/>
+          </div>
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showCapCode').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+    </div>
+        
+    <script src="js/showcasetab.js"></script> 
+</body>
+</html>

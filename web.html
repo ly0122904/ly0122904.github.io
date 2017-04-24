@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Yan Liu ePortfolilo Software</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" />
+    <link href="css/style_layoutMain.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style_emailForm.css" rel="stylesheet" type="text/css"/>	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    
+  </head>
+  <body>
+    <!-- Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class="w3-quarter">
+          <div class="w3-white bg-1 w3-card-4">
+            <div class="w3-display-container text-center">
+              <a href="index.html" onclick="closeWin()"><img src="images/YanLiu.jpg" width="200px"  class="w3-border img-circle w3-padding w3-padding-16" alt="me"/></a>
+			  <br/><br/>
+			  <a href="index.html" onclick="closeWin()"><button class="w3-button w3-small w3-transparent w3-text-orange w3-round-large w3-border w3-border-grey">Back</button></a>
+              <div class="w3-display-bottomcenter w3-container w3-text-black">
+                <h2 id="mySelf">Yan Liu</h2>
+              </div>
+            </div>
+            <div class="w3-display-container text-center">
+                  <a href="Resume-YanLiu-w0122904-702.pdf" download>
+                    <img src="images/icon-pdf.jpg" alt="pdf_icon" width="30px" />
+                  </a>
+                  <div class="desc w3-text-white">Download Resume</div>
+            </div>
+            <hr/>
+            <div class="w3-display-container text-center">
+                <h4>Contact Me</h4><br />
+            	<div>
+            		<p>Where to Find Me</p>
+            		<img id="line" src="Images/straight_line.png" alt="line" width="100%"/>
+            		<p class="psmall">Institute of Technology Campus, NSCC</p>
+            		<p class="psmall">5685 Leeds St, Halifax, NS B3K 2T3</p>
+                    <div id="googleMap" style="height:100px;width:80%;margin: 10%;"></div>
+            	</div>
+                <!-- Add Google Maps -->
+                <script src="https://maps.googleapis.com/maps/api/js"></script>    
+                <script src="js/mapShow.js"></script>
+        
+            	<div>
+            		<p>Sent me an email</p>
+                    <p><i class="w3-margin-right w3-large w3-text-white glyphicon glyphicon-envelope"></i>
+                      <a class="w3-text-white" href="mailto:w0122904@nscc.ca?Subject=Hello%20feedback">w0122904@nscc.ca
+                      </a>
+                    </p>
+            		<img id="line" src="images/straight_line.png" alt="line" width="100%"/>
+            		<div id="form_email"></div> <!-- Include JS file here -->
+            		<script src="js/email_form.js"></script>
+            	</div>
+            </div>
+          </div>
+        </div>
+        <!-- End Left Column -->
+        
+    
+        <!-- Right Column -->
+        <div class="w3-threequarter">
+        <!--Skill section -->
+        <div class="container-fluid bg-5">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/web2.png" alt="webDev" width="100%"/>
+            </div>
+            <div class="col-sm-9">
+              <h2>Application Development</h2>
+              <h4 class="w3-text-grey" >Sample works to present the creations of web applications - dynamic web sites combined with server side programming, Android apps and UWP. The major works included: simple website, Social Networking, eCommerce-Shopping Cart Applications, Games, Blogs, etc..Two main categories of practic coding, scripting and programming in the projects:Client Side Scripting and Server Side Scripting. Android API  and UWP development are shown indivadually as well.</h4>      
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="text-center">
+            <h2>Showcase</h2>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Client Side Scripting/Coding</h4>
+                </div>
+                <div class="panel-body">
+                  <p></p>
+                  <p class="psmall"><strong >The client-side content is executed by a browser, works as Font-end of the site. It is changing interface behaviors within a specific web page in response to mouse or keyboard actions, or at specified timing events.The most widely used scripting languages are combination of JavaScript and HTML and CSS. JavaScript is fueled by an array of excellent frameworks that simplify it and give it more agility. My cases may concern technologies as: </strong></p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-aqua">HTML5</span>
+                    <span class="w3-tag w3-small w3-round-small w3-yellow">CSS3</span></p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-purple">JAVASCRIPT</span>
+                     <span class="w3-tag w3-small w3-round-small w3-lime">JQUERY</span>
+                  <p><span class="w3-tag w3-small w3-round-small w3-pink">AJAX</span>
+                    <span class="w3-tag w3-small w3-round-small w3-blue">XML</span></p> 
+                  
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showWeb').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+            <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Sever Side Scripting/Coding</h4>
+                </div>
+                <div class="panel-body">
+                  <p></p>
+                  <p class="psmall"><strong>Server-side scripting is executed by a web server. The program is running on a web server and generates the web content on various web pages, manage user sessions, and control workflow. Server responses may be determined by such conditions as data in a posted HTML form, parameters in the URL, the type of browser being used, the passage of time, or a database or server state. In this showcase, Server-side languages include:</strong></p>
+                  <p>
+                    <span class="w3-tag w3-small w3-round-small w3-red">PHP</span>
+                    <span class="w3-tag w3-small w3-round-small w3-green">Larval</span></p>
+				  <p>
+					<span class="w3-tag w3-small w3-round-small w3-purple">JAVASCRIPT</span>
+					<span class="w3-tag w3-small w3-round-small w3-lime">JQUERY</span></p>
+				  <p>	
+					<span class="w3-tag w3-small w3-round-small w3-yellow">NODEJS</span>
+                    <span class="w3-tag w3-small w3-round-small w3-pink">AJAX</span>
+				  </p>
+                  <p><span class="w3-tag w3-small w3-round-small w3-purple">J2EE</span>
+                    <span class="w3-tag w3-small w3-round-small w3-yellow">JSP</span>
+                    <span class="w3-tag w3-small w3-round-small w3-indigo">EI & Tag</span>
+                  </p>
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showServer').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div> 
+           <div class="col-sm-4">
+              <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                  <h4>Apps and Platforms</h4>
+                </div>
+                <div class="panel-body">
+                <p></p>
+                  <p class="psmall"><strong>Android API: Android provides a rich application framework to build innovative apps and games for mobile devices in a Java language. The samples are showed here illustrate practics about how to build apps using Android's various APIs.</strong></p> 
+                  <p><img src="images/icons/icon-android.jpg" height="40px"/></p>
+				  <p class="psmall" style="text-align: left !important;"><strong>.Net Platform using Visul Studio 2015</strong></p>
+                  <p class="psmall" style="text-align: left !important;"><strong>UWP (Universal Windows Platform):Windows 10 and Windows 10 Mobile (Samles shown in Software C#)</strong></p>
+                  <p><img src="images/icons/icon-uwp.jpg" height="40px"/> <img src="images/icons/icon-c3.png" height="40px"/></p>
+                </div>
+                <div class="panel-footer">
+                  <button onclick="document.getElementById('showAdr').style.display='block'" class="btn w3-large w3-round-large w3-border w3-teal">Show</button>
+                </div>
+              </div> 
+            </div>
+          </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="container-footer bg-4 text-center">
+      <p>Copyright &copy; 2017 by Yan Liu at NSCC</a></p> 
+    </footer>
+    
+    <!-- showcase Web modal -->
+    <div id="showWeb" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showWeb').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Sample Works for Client Side Scripting</h2>
+          </header>
+        
+          <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+           <li><a href="#" class="tablink" onclick="openCase(event, 'Case1')">Park Website</a></li>
+           <li><a href="#" class="tablink" onclick="openCase(event, 'Case2')">Sudoku</a></li>
+           <li><a href="#" class="tablink" onclick="openCase(event, 'Case3')">Google API</a></li>
+		   <li><a href="#" class="tablink" onclick="openCase(event, 'Case4')">OneNote API</a></li>
+		   
+          </ul>
+        
+          <div id="Case1" class="w3-container case">
+           <h2>Newspaper Website</h2>
+           <p>This case study is in "New Perspectives on HTML and CSS" Tutorial4.</p>
+           <p>Using provoided documements redesigned the newspaper printed layout to the online version. The layout was based on a fluid design that will render well on page widths from 1000 up to 1400 pixels. To pactice HTML5 and CSS3. The script was validated throught W3 Validator, and tested in a variety of devices, browsers, and screen resolutions to ensure its readable under different conditions.</p><br /><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_park.png" alt="park"/>
+           <br /><br />
+           <p class="w3-small">Sample CSS code</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_codecss.png" alt="codecss"/>
+          </div>
+        
+          <div id="Case2" class="w3-container case">
+           <h2>Sudoku</h2>
+           <p>This case study is in "New Perspectives on HTML and CSS" Tutorial5.</p>
+           <p>Using html and css created sudoku website, then add some JavaScript to the site to simulate a simplified Sudoku puzzle. Bind a function to the click event on every originally empty cell of the Puzzle to show a JavaScript prompt pop-up box to allow a user to enter a new value. When user input, check whether the is valid according to Sudoku rules, show a pop-up message when violates the rules. A reset button can reset all cells that were originally blank.</p><br /><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_puzzle.png" alt="sudoku"/><br /><br /> 
+           <p class="w3-small">Sample JS code</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_codejs.png" alt="codejs"/>
+          </div>
+          
+          <div id="Case3" class="w3-container case">
+           <h1>Google Direction</h1>
+           <p>This case is to create a single page application that uses JavaScript and the Google Directions API to take in a starting location and destination along with expected arrival time and tells the user the steps to get there via public transport. The application uses w3-css to display the journey in a modern clean way, the direction using Ajax call to get XML response, validation using JS Validation API. The application works on at least three modern browsers </p><br/><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_dire.png" alt="direction"/><br /><br /> 
+           <p class="w3-small">Sample JS code for Ajax call and XML Response</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_codedjs.png" alt="directionjs"/><br /><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/web_codeXml.png" alt="xml"/>
+          </div>
+		  
+		  <div id="Case4" class="w3-container case">
+           <h1>Using OneNote Api</h1>
+           <p>Single Page Application that uses the Microsoft OneNote API to present a user with an online list of editable notes. Notes are retrieved, saved, edited and deleted asynchronously using JQuery AJAX calls with the user’s bearer token.In this case, Javascript and Jquery UI is use to paractice.</p><br/><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/onenote.png" alt="onenote"/><br /><br /> 
+           <p class="w3-small">Sample code JS and JQuery for Ajax call</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/onenotejs.png" alt="onenotejs"/><br /><br />  
+          </div>
+		 
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showWeb').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+        
+        <!-- showcase Server modal -->
+        <div id="showServer" class="w3-modal">
+         <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+          <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showServer').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Sample Works for Server Side Scripting</h2>
+          </header>
+        
+          <ul class="w3-pagination w3-white w3-border-bottom" style="width:100%;">
+           <li><a href="#" class="tablinkS" onclick="openCaseS(event, 'CaseS1')">PHP</a></li>
+           <li><a href="#" class="tablinkS" onclick="openCaseS(event, 'CaseS2')">Laravel</a></li>
+		   <li><a href="#" class="tablinkS" onclick="openCaseS(event, 'CaseS3')">Json-Server</a></li>
+           <li><a href="#" class="tablinkS" onclick="openCaseS(event, 'CaseS4')">e-Commerce</a></li>
+          </ul>
+        
+          <div id="CaseS1" class="w3-container caseS">
+           <h2>PHP-EmployeeRecords</h2>
+           <p>This case study is to create a web site in PHP that will allow authorized users to access the system for the viewing, searching, inserting, updating, and deleting of Employee records from the MySQL Employees sample database. PHP Debugging in PhpStorm, Data Connection using mySQL, font-end using HTML CSS and JavaScript.</p><br /><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_employ.png" alt="park"/>
+           <br /><br />
+           <p class="w3-small">Sample php code for login</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_php.png" alt="codephp"/>
+          </div>
+        
+          <div id="CaseS2" class="w3-container caseS">
+           <h2>Laravel CMS </h2>
+           <p>Laravel is a PHP framework for modern web apps. Laravel ships with built-in support for database migrations, object-relational mapping, routing and authentication, making it easier for developers to start and maintain their work</p>
+           <p>This project is building a custom CMS from scratch based on Laravel. Two web sites were created in PHP that will serve as a custom Content Management System. Using the administrative back-end site, the basic structure (i.e. pages, content areas, articles, and style templates) of a website can be dynamically created and modified by only authorized users with the appropriate permissions. The additions and changes to the sites structure will all be stored in the custom SQLite/MySQL databases that you will create to support this CMS. </p>
+           <p>The front-end site will be dynamically displayed based on the structure stored in the CMS database. The front-end site will be viewable by all users, but users with the appropriate permissions will be able to log in and make some changes to site content. Good security practices will be followed in the construction of the application. The application will be built using proper design practices to separate presentation code from business logic, and database manipulation code. The database design will be documented in a properly-formed ERD. The application will be built using proper design practices using Laravel MVC to separate presentation code from business logic, and database manipulation code. </p>
+           <p>Sample code for this project is integrated with Source Control in <a href="https://github.com/NSCC-Fall2016-INET2005P/Liu-Yan-w0122904/tree/master/finalProject">Github repository</a>.</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_erd.jpg" alt="ERD"/><br /><br /> 
+           <p class="w3-small">Screenshots Front_End Page</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_lar_f.png" alt="Laravel-front-end"/>
+		   <p class="w3-small">Screenshots Back_End Page Edit:  Page as a example</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_lar_ed1.png" alt="Laravel-edit-page"/>
+		   <p class="w3-small">Screenshots Back_End Page Edit:  Edit User as a example</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_lar_ed2.png" alt="Laravel-edit-page"/>
+          </div>
+		  
+          <div id="CaseS3" class="w3-container caseS">
+           <h2>Using Json-Server</h2>
+		   <!--Example 1  -->
+		   <div class="w3-container w3-light-grey w3-padding">
+		   <h3 class="w3-text-blue">Sample Work 1 -- Single Page Blog</h>
+           <p class="w3-text-black">A single-page blogging application backed by a separate server. The backend REST server will be provided by JSON Server (details in the Server Setup section below). The web application is hosted in a separate web server running on the same machine (apache or IIS) and performs CRUD actions on the JSON server using JQuery AJAX calls. Entering a title and body should create a new blog post appended to the table. Each row in the list allows you to edit or delete a post.</p><br/><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/blog.png" alt="blog"/><br /><br /> 
+           <p class="w3-small w3-text-black">Sample JS/JQuery code </p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/jsonjs.png" alt="json"/><br /><br />
+           <p class="w3-small w3-text-black">Json database </p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/json2.png" alt="jsonDb"/><br />
+          </div>
+		  <!--Example 2  -->
+		   <div class="w3-container w3-light-grey w3-padding">
+			   <h3 class="w3-text-blue">Sample Work 2 -- E-Commerce</h3>
+			   <p class="w3-text-black">As team work project, we maked an e-commerce sample application based on the REST API server, while utilizing AJAX calls. The backend server uses NodeJS for the web application, and the web application works on an IIS server. The web application consists of two html pages. The first page is for employees to manage product details such as name, category, description, stock, price and date. This allows the employee utilize some CRUD operations (create and update). The second page is meant to show the products to the customers. Customer can see product images, and upon choosing a product, the product details will be displayed. To design website we intend on using bootstrap, as well as jQuery visual effects. We also utilized the free portfolio template served by Start Bootstrap. In this case, JavaScript files, JQuery are used.
+			   </p><br/><br />
+			   <p class="w3-text-black">Front_End Design</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/riaF.png" alt="riafront"/>
+			   <p class="w3-text-black">Back_End Design</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/riaB.png" alt="riaback"/>
+			   <p class="w3-text-black">Json Server</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/riaS.png" alt="riaJS"/>
+			   <p class="w3-text-black">Sample Code</p>
+			   <img class="modalImg w3-border w3-padding" src="images/showcase/riaC.png" alt="riaCode"/><br /><br />
+		   </div>
+		  </div>	
+          <div id="CaseS4" class="w3-container caseS">
+           <h2>E-commerce</h2>
+           <p>In this project, an online candy store system is designed as Web-based e-commerce software that helps retailer to sale candy bars online, control the in store, manage membership, payment, etc. This term project is arm to practice and get experience in java web application.</p>
+           <p>This project is to create a simple MVC application using servlets and jsp, using Eclipse JEE Neon package as IDE, and Tomcat (apache-tomcat-8.0.37) as Java Web container. A Small Candy store is an online store where customers can browse the catalog and select products of interest. Recently, the products in this store are supplied by 2 wholesales. The selected items may be collected in a shopping cart. At checkout time, the items in the shopping cart will be presented as an order. At that time, more information will be needed to complete the transaction. Usually, the customer will be asked to login or register as a member, with filling or selecting a billing shipping information, and payment information such as credit card number (demo). The selected products can be temporarily store for period time if not finishing process of order. An e-mail notification is sent to the customer as soon as the order is placed.</p> 
+           <p>In this case, a website will be created to enable customer to shop online. Also, an administration back-end site will be created to allow staff members to keep track of orders. This case is a demo to real case, thus, no domain and real web host. The data system here is using Text files which easy to handle. </p><br/><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_candy.png" alt="Candy"/><br /><br /> 
+           <p class="w3-small">Sample JEE servlet code</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_candyOrder.png" alt="ordercode"/><br /><br />
+           <p class="w3-small">Sample JSP code</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/s_jsp.png" alt="xml"/>
+          </div>
+		  
+          <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showServer').style.display='none'">Close</button>
+          </div>
+         </div>
+        </div>
+        <!-- showcase Android modal -->
+		<div id="showAdr" class="w3-modal">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom">
+           <header class="w3-container bg-5"> 
+           <span onclick="document.getElementById('showAdr').style.display='none'" 
+           class="w3-closebtn w3-padding-top">&times;</span>
+           <h2>Sample Works for Android</h2>
+          </header>
+		  
+		  <div class="w3-container">
+           <h2>List Fragment with Details</h2>
+           <p></p>
+           <p></p><br /><br />
+           <img class="modalImg w3-border w3-padding" src="images/showcase/andrU.png" alt="android"/>
+           <br /><br />
+           <p class="w3-small">Sample code ListFragment</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/AndrList.png" alt="listpage"/>
+           <br/><br/>
+		   <p class="w3-small">Sample code Details Page</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/AndrDetail.png" alt="detailpage"/>
+           <br/><br/>
+		   <p class="w3-small">Sample code Adapter of view</p>
+           <img class="modalImg w3-border w3-padding" src="images/showcase/AndrAp.png" alt="adapter"/>
+           </div>
+		   <div class="w3-container w3-light-grey w3-padding">
+           <button class="w3-btn w3-right w3-white w3-border" 
+           onclick="document.getElementById('showAdr').style.display='none'">Close</button>
+           </div>
+		  </div>
+        </div>
+	</div>
+    <script src="js/showcasetab.js"></script> 
+</body>
+</html>
